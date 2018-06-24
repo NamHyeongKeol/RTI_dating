@@ -5,9 +5,9 @@ from django.views.decorators.http import require_http_methods
 
 @csrf_protect
 @require_http_methods(['GET'])
-def base_site(request):
+def base(request):
     if request.method == 'GET':
-        return render(request, 'base_site.html')
+        return render(request, 'base.html')
 
 
 @csrf_protect
