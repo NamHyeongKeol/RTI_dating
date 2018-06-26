@@ -15,3 +15,10 @@ def base(request):
 def home(request):
     if request.method == 'GET':
         return render(request, 'home.html')
+
+
+@csrf_protect
+@require_http_methods(['GET'])
+def about(request):
+    if request.method == 'GET':
+        return render(request, 'about.html')
