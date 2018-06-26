@@ -7,4 +7,4 @@ from django.views.decorators.http import require_http_methods
 @require_http_methods(['GET', 'POST', 'PUT', 'DELETE'])
 def cards(request):
     if request.method == 'GET':
-        return render(request, 'index.html')
+        return render(request, 'card/index.html')

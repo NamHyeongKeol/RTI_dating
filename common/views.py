@@ -7,18 +7,18 @@ from django.views.decorators.http import require_http_methods
 @require_http_methods(['GET'])
 def base(request):
     if request.method == 'GET':
-        return render(request, 'base.html')
+        return render(request, 'common/base.html')
 
 
 @csrf_protect
 @require_http_methods(['GET'])
 def home(request):
     if request.method == 'GET':
-        return render(request, 'home.html')
+        return render(request, 'common/home.html')
 
 
 @csrf_protect
 @require_http_methods(['GET'])
 def about(request):
     if request.method == 'GET':
-        return render(request, 'about.html')
+        return render(request, 'common/about.html')
