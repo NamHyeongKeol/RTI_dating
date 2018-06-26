@@ -12,10 +12,18 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 </head>
 <body>
+{% block nav %}
+    <ul id="nav">
+        <li>{% block nav-home %}<a href="{% url 'common:home' %}">Home</a>{% endblock %}</li>
+        <li>{% block nav-cards %}<a href="{% url 'card:cards' %}">Card</a>{% endblock %}</li>
+        <li>{% block nav-about %}<a href="{% url 'common:about' %}">About</a>{% endblock %}</li>
+        <li>{% block nav-store %}<a href="{% url 'store:store' %}">Store</a>{% endblock %}</li>
+    </ul>
+{% endblock %}
 <div class="content container">
+    asdfasdfasdf
     {% block content %}
     {% endblock %}
 </div>
