@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'card',
     'common',
     'store',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
