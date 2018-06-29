@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'card',
     'common',
     'store',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
