@@ -112,4 +112,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-from .lib.shell_plus import *
+from .module.shell_plus import *
