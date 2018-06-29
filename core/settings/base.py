@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'card',
     'common',
     'store',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
@@ -110,3 +111,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+from .module.shell_plus import *
