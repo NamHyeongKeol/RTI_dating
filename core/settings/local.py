@@ -15,6 +15,8 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'user.User'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
